@@ -1,0 +1,28 @@
+feature suplementaire :
+  - afficher qqch à la premiere connexion sur l'apli
+  - qd je clique sur rechercher n'affiche que le film demandé sinon not found
+  - filtrer par genre (side bar)
+  - rechercher comment faire des test
+
+-------------------------------------------------------------------
+ 
+5 - Bonus : 
+          - Sauvegarder dans le local storage les coups de cœur, les afficher dans la page prévue à cet effet.
+ 
+6 - Apporter de l’attention au style de l’app pour s’entrainer à pratiquer avec React.
+
+-------------------------------------------------------------------
+API liste de film (query=recherche) :
+
+https://api.themoviedb.org/3/search/movie?api_key=9093f808553ef07633a201098e8b95c2&query=code&language=fr-FR
+
+-------------------------------------------------------------------
+API pour les genres :
+
+https://api.themoviedb.org/3/genre/movie/list?api_key=9093f808553ef07633a201098e8b95c2&language=fr-FR
+
+-------------------------------------------------------------------
+
+API pour rechercher avec l'ID (769636=ID) :
+
+https://api.themoviedb.org/3/movie/769636?api_key=9093f808553ef07633a201098e8b95c2&language=fr-FR
