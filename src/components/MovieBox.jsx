@@ -1,9 +1,13 @@
+import { useContext } from "react";
+import { allMoviesContext } from "../Context";
 import MovieCard from "./MovieCard";
 
-const MovieBox = ({ allMovies, idBtn }) => {
+const MovieBox = ({ idBtn }) => {
+  const movies = useContext(allMoviesContext);
+
   const renderContent = () => {
     if (idBtn === "top") {
-      return allMovies
+      return movies
         .sort((a, b) => b.vote_average - a.vote_average)
         .map((eachMovie) => (
           <MovieCard
@@ -13,7 +17,7 @@ const MovieBox = ({ allMovies, idBtn }) => {
           />
         ));
     } else if (idBtn === "flop") {
-      return allMovies
+      return movies
         .sort((a, b) => a.vote_average - b.vote_average)
         .map((eachMovie) => (
           <MovieCard
@@ -23,7 +27,7 @@ const MovieBox = ({ allMovies, idBtn }) => {
           />
         ));
     } else {
-      return allMovies.map((eachMovie) => (
+      return movies.map((eachMovie) => (
         <MovieCard
           key={eachMovie.id}
           eachMovie={eachMovie}
