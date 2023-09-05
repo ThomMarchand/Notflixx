@@ -8,11 +8,11 @@ const GetData = ({ show, allMoviesStore }) => {
   const [allMovies, setAllMovies] = useState([]);
   const [userSearch, setUserSearch] = useState([]);
 
-  const temp = window.localStorage.getItem("search");
-  console.log(typeof temp);
+  // const temp = window.localStorage.getItem("search");
+  // console.log(typeof temp);
 
   const handleChange = (e) => {
-    window.localStorage.setItem("search", e.target.value);
+    // window.localStorage.setItem("search", e.target.value);
     setUserSearch(e.target.value);
   };
 

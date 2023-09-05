@@ -37,10 +37,10 @@ const MovieCard = ({ eachMovie, genre }) => {
 
     return (
       <div className="movie-card">
-        {/* <img
+        <img
           src={`https://image.tmdb.org/t/p/original${eachMovie.backdrop_path}`}
           alt={`Poster de ${eachMovie.title}`}
-        /> */}
+        />
         <h3>{eachMovie.title}</h3>
         <p>
           Sorti le : {eachMovie.release_date.replace(reverseDate, "$3-$2-$1")}
