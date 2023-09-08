@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { compareTwoData } from "../function/compareTwoData";
 import MovieGenre from "./MovieGenre";
-import LikeButton from "./LikeButton";
+import DescribeButton from "./DescribeButton";
 
 const MovieCard = ({ eachMovie, genre }) => {
   const [AllGenres, setAllGenres] = useState([]);
@@ -47,7 +47,7 @@ const MovieCard = ({ eachMovie, genre }) => {
         <ul>{dysplayGenres()}</ul>
         <h3>Synopsis</h3>
         <p>{eachMovie.overview}</p>
-        <LikeButton id={eachMovie.id} />
+        <DescribeButton id={eachMovie.id} />
       </div>
     );
   } catch (error) {
