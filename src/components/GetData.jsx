@@ -4,7 +4,6 @@ import { allMoviesContext } from "../Context";
 import SearchBar from "../components/SearchBar";
 
 const GetData = ({ show, allMoviesStore }) => {
-  // console.log(allMoviesStore);
   const [allMovies, setAllMovies] = useState([]);
   const [userSearch, setUserSearch] = useState([]);
 
@@ -17,7 +16,7 @@ const GetData = ({ show, allMoviesStore }) => {
       .get(
         `https://api.themoviedb.org/3/search/movie?api_key=9093f808553ef07633a201098e8b95c2&query=${userSearch}&language=fr-FR`
       )
-      .then((res) => setAllMovies(res.data.results));
+      .then(({ data }) => setAllMovies(data.results));
   };
 
   useEffect(() => fetchData(), [userSearch]);

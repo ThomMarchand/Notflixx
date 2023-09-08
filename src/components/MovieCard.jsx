@@ -5,7 +5,6 @@ import MovieGenre from "./MovieGenre";
 import LikeButton from "./LikeButton";
 
 const MovieCard = ({ eachMovie, genre }) => {
-  // console.log("genre :", genre);
   const [AllGenres, setAllGenres] = useState([]);
 
   useEffect(() => {
@@ -53,7 +52,7 @@ const MovieCard = ({ eachMovie, genre }) => {
       </div>
     );
   } catch (error) {
-    // console.log(error);
+    console.log(error);
   }
 };
 

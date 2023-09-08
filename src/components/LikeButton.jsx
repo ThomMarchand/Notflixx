@@ -5,7 +5,7 @@ const LikeButton = ({ id, title }) => {
   };
 
   const handleClick = () => {
-    window.localStorage.setItem(id, JSON.stringify(movie));
+    console.log("glop");
   };
   return (
     <button onClick={() => handleClick()}>Ajouter aux coup de coeurs</button>
