@@ -1,5 +1,0 @@
-- utiliser l'api de la page home (pas de recherche pas l'id);
-
-- créer un tableau d'id (localStorage);
-
-- comparer 

@@ -2,7 +2,6 @@ feature suplementaire :
   - afficher qqch à la premiere connexion sur l'apli
   - qd je clique sur rechercher n'affiche que le film demandé sinon not found
   - filtrer par genre (side bar)
-  - rechercher comment faire des test
 
 -------------------------------------------------------------------
 API liste de film (query=recherche) :

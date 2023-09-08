@@ -25,23 +25,23 @@ const SearchBar = ({ value, onChange }) => {
             placeholder="Entrez le nom d'un film"
             onChange={onChange}
           />
+          <div className="filter-buttons btn-group">
+            <button
+              className="top btn btn-primary btn-sm "
+              id="top"
+              onClick={(e) => handleClick(e)}
+            >
+              Top
+            </button>
+            <button
+              className="flop btn btn-primary btn-sm"
+              id="flop"
+              onClick={(e) => handleClick(e)}
+            >
+              Flop
+            </button>
+          </div>
         </form>
-        <div className="filter-buttons btn-group">
-          <button
-            className="top btn btn-primary btn-sm "
-            id="top"
-            onClick={(e) => handleClick(e)}
-          >
-            Top
-          </button>
-          <button
-            className="flop btn btn-primary btn-sm"
-            id="flop"
-            onClick={(e) => handleClick(e)}
-          >
-            Flop
-          </button>
-        </div>
       </div>
       <div className="section-movie-box">
         <MovieBox idBtn={idBtn} />

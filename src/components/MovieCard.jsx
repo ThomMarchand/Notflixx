@@ -5,7 +5,6 @@ import MovieGenre from "./MovieGenre";
 import LikeButton from "./LikeButton";
 
 const MovieCard = ({ eachMovie, genre }) => {
-  // console.log("genre :", genre);
   const [AllGenres, setAllGenres] = useState([]);
 
   useEffect(() => {
@@ -24,7 +23,6 @@ const MovieCard = ({ eachMovie, genre }) => {
           AllGenres,
           eachMovie.genre_ids
         );
-
         return convertesMovieGenre.map((eachGenre, index) => (
           <MovieGenre key={index} eachGenre={eachGenre} />
         ));
@@ -49,11 +47,11 @@ const MovieCard = ({ eachMovie, genre }) => {
         <ul>{dysplayGenres()}</ul>
         <h3>Synopsis</h3>
         <p>{eachMovie.overview}</p>
-        <LikeButton id={eachMovie.id} title={eachMovie.title} />
+        <LikeButton id={eachMovie.id} />
       </div>
     );
   } catch (error) {
-    // console.log(error);
+    console.log(error);
   }
 };
 
