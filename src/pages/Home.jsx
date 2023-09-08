@@ -6,10 +6,9 @@ const Home = () => {
   return (
     <div className="body-box">
       <div className="header">
-        <Navigation />
         <AppTitle />
-        <h2>Acceuil</h2>
-        <GetData show={"show"} />
+        <h2>Accueil</h2>
+        <GetData />
       </div>
     </div>
   );

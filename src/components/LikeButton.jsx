@@ -1,14 +1,12 @@
-const LikeButton = ({ id, title }) => {
-  const movie = {
-    id,
-    title,
-  };
+import { Link } from "react-router-dom";
 
-  const handleClick = () => {
-    console.log("glop");
-  };
+import MovieDescription from "../pages/MovieDescription";
+
+const LikeButton = ({ id }) => {
   return (
-    <button onClick={() => handleClick()}>Ajouter aux coup de coeurs</button>
+    <button>
+      <Link to={"movie"}>Description du film</Link>
+    </button>
   );
 };
 

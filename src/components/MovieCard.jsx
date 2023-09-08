@@ -23,7 +23,6 @@ const MovieCard = ({ eachMovie, genre }) => {
           AllGenres,
           eachMovie.genre_ids
         );
-
         return convertesMovieGenre.map((eachGenre, index) => (
           <MovieGenre key={index} eachGenre={eachGenre} />
         ));
@@ -48,7 +47,7 @@ const MovieCard = ({ eachMovie, genre }) => {
         <ul>{dysplayGenres()}</ul>
         <h3>Synopsis</h3>
         <p>{eachMovie.overview}</p>
-        <LikeButton id={eachMovie.id} title={eachMovie.title} />
+        <LikeButton id={eachMovie.id} />
       </div>
     );
   } catch (error) {

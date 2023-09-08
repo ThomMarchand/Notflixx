@@ -3,7 +3,7 @@ import axios from "axios";
 import { allMoviesContext } from "../Context";
 import SearchBar from "../components/SearchBar";
 
-const GetData = ({ show, allMoviesStore }) => {
+const GetData = () => {
   const [allMovies, setAllMovies] = useState([]);
   const [userSearch, setUserSearch] = useState([]);
 
@@ -23,7 +23,7 @@ const GetData = ({ show, allMoviesStore }) => {
 
   return (
     <allMoviesContext.Provider value={allMovies}>
-      {show && <SearchBar value={userSearch} onChange={handleChange} />}
+      <SearchBar value={userSearch} onChange={handleChange} />
     </allMoviesContext.Provider>
   );
 };
