@@ -11,7 +11,7 @@ const Like = () => {
       <Navigation />
       <AppTitle />
       <h2>Coup de coeurs</h2>
-      <GetData allMoviesStore={allMoviesStore} />
+      {/* <GetData allMoviesStore={allMoviesStore} /> */}
     </div>
   );
 };

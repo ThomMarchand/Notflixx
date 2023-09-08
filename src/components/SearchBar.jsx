@@ -1,6 +1,12 @@
 import { useState } from "react";
 import MovieBox from "../components/MovieBox";
 
+/**
+ *
+ * @param {string} value* value of user search
+ * @param {string} onChange* call my function in my parent component for update state userSearch
+ * @returns
+ */
 const SearchBar = ({ value, onChange }) => {
   const [idBtn, setIdBtn] = useState("");
 
@@ -14,19 +20,25 @@ const SearchBar = ({ value, onChange }) => {
         <form onSubmit={(e) => e.preventDefault()}>
           <input
             value={value}
+            className="form-control"
             type="text"
             placeholder="Entrez le nom d'un film"
             onChange={onChange}
           />
-          <button type="submit" id="submit" onClick={(e) => handleClick(e)}>
-            Rechercher
-          </button>
         </form>
-        <div className="filter-buttons">
-          <button className="top" id="top" onClick={(e) => handleClick(e)}>
+        <div className="filter-buttons btn-group">
+          <button
+            className="top btn btn-primary btn-sm "
+            id="top"
+            onClick={(e) => handleClick(e)}
+          >
             Top
           </button>
-          <button className="flop" id="flop" onClick={(e) => handleClick(e)}>
+          <button
+            className="flop btn btn-primary btn-sm"
+            id="flop"
+            onClick={(e) => handleClick(e)}
+          >
             Flop
           </button>
         </div>
