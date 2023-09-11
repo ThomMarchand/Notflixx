@@ -23,12 +23,19 @@ const MovieDescription = () => {
         <div className="header">
           <AppTitle />
           <Navigation />
-          <h1>{movie.title}</h1>
+          <div>
+            <h1 className="d-flex flex-colum justify-content-center align-items-center">
+              {movie.title}
+            </h1>
+
+            <h3>Titre original : {movie.original_title}</h3>
+            <p>{movie.overview}</p>
+          </div>
         </div>
       </div>
     );
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
 

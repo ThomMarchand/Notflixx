@@ -16,7 +16,7 @@ const SearchBar = ({ value, onChange }) => {
 
   return (
     <>
-      <div className="searchbar-box">
+      <div className="searchbar-box d-flex flex-colum align-items-center justify-content-center">
         <form onSubmit={(e) => e.preventDefault()}>
           <input
             value={value}
@@ -25,7 +25,7 @@ const SearchBar = ({ value, onChange }) => {
             placeholder="Entrez le nom d'un film"
             onChange={onChange}
           />
-          <div className="filter-buttons btn-group">
+          <div className="filter-buttons btn-group d-flex flex-colum align-items-center justify-content-center">
             <button
               className="top btn btn-primary btn-sm "
               id="top"

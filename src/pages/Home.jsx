@@ -7,7 +7,9 @@ const Home = () => {
     <div className="body-box">
       <div className="header">
         <AppTitle />
-        <h2>Accueil</h2>
+        <h2 className="d-flex flex-colum justify-content-center align-items-center">
+          Accueil
+        </h2>
         <GetData />
       </div>
     </div>
