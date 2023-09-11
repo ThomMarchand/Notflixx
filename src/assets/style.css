@@ -1,7 +1,15 @@
-/* button {
-  margin-top: 100px;
-} */
-
 img {
-  width: 300px;
+  width: 500px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
