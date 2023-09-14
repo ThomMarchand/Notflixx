@@ -6,6 +6,10 @@ a {
   text-decoration: none;
 }
 
+.filter-buttons {
+  margin: 15px;
+}
+
 .movie-card {
   display: flex;
   flex-direction: column;

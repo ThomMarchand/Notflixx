@@ -27,7 +27,7 @@ const MovieDescription = () => {
             <h1 className="d-flex flex-colum justify-content-center align-items-center">
               {movie.title}
             </h1>
-
+            <h2>Page en cours de réalisation</h2>
             <h3>Titre original : {movie.original_title}</h3>
             <p>{movie.overview}</p>
           </div>
